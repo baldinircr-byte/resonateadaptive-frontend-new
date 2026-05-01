@@ -1,66 +1,137 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+
+const testimonials = [
+  {
+    quote:
+      "I’m a T3 paraplegic. I currently play the piano without use of the pedals and have been trying to find a solution for the last 20 years. This would completely change how I play.",
+    author: "Steve J.",
+  },
+  {
+    quote:
+      "Our son is learning piano but can’t use the pedals, which really limits him. We’re very interested in a device like this—it would open up so many more possibilities for him.",
+    author: "Maria (parent)",
+  },
+  {
+    quote:
+      "Hello, I am a music therapist working with individuals with spinal cord injuries. I often see patients who lose the ability to use piano pedals after injury. Having access to a device like this would allow them to continue playing and regain an important part of their lives.",
+    author: "Bailey",
+  },
+  {
+    quote:
+      "I grew up playing the piano but after a spinal cord injury, I wasn’t able to use the pedals anymore. I recently started playing again, and a device like this would be a complete game changer.",
+    author: "Alissa P.",
+  },
+  {
+    quote:
+      "I’m a music student and have been playing piano since I was 7. I also have a spinal injury and use a wheelchair. Not being able to use the pedals became a major limitation as I advanced. Discovering this has restored my confidence and made me feel like I can continue pursuing piano.",
+    author: "Hannah H.",
+  },
+  {
+    quote:
+      "I have a friend who has played piano her whole life but recently lost her ability to play fully due to her disability. Seeing something like this gives her real hope to continue doing what she loves.",
+    author: "Kirsty",
+  },
+];
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <main>
+      <section className="hero">
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/images/pages/hero-wheelchair.jpg"
+          alt="Riccardo playing the piano in a wheelchair"
+          fill
           priority
+          className="heroImage"
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="heroOverlay" />
+        <div className="shell heroContent">
+          <Image
+            src="/images/site/logo-dark.png"
+            alt="Resonate Adaptive"
+            width={2500}
+            height={751}
+            className="heroLogo"
+            priority
+          />
+          <div className="heroTextBlock">
+            <p className="heroKicker">Play Without Limits</p>
+            <h1>Make Music Accessible</h1>
+            <p className="heroLead">
+              The first device that allows people with disabilities to access the full potential of the piano.
+              Resonate Adaptive makes it possible for disabled individuals to press the damper pedal without the need for lower limb function.
+            </p>
+            <div className="heroActions">
+              <a href="#why" className="button buttonPrimary">Our Why</a>
+              <a href="#contact" className="button buttonSecondary">Get in touch</a>
+            </div>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </section>
+
+      <section className="section sectionLight">
+        <div className="shell storyGrid">
+          <div>
+            <p className="eyebrow">The idea</p>
+            <h2>A clear problem. A real need. A meaningful reason to build.</h2>
+            <p className="bodyCopy">
+              For pianists who cannot use their lower limbs, the damper pedal becomes an access barrier to the instrument itself.
+              Resonate exists to restore that missing part of piano expression.
+            </p>
+            <p className="bodyCopy muted">
+              This is not about a novelty adaptation. It is about restoring sustain, phrasing, and the ability to engage the piano more fully.
+            </p>
+          </div>
+          <div className="imageCard">
             <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/images/pages/mouthpiece.jpg"
+              alt="Resonate mouthpiece"
+              width={1500}
+              height={1090}
+              className="featureImage"
             />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section id="why" className="section sectionDark">
+        <div className="shell">
+          <p className="eyebrow eyebrowLight">Our Why</p>
+          <h2 className="sectionTitleLight">A device like this matters because people have already been waiting for it.</h2>
+          <div className="testimonialGrid">
+            {testimonials.map((item) => (
+              <blockquote key={item.author} className="testimonialCard">
+                <p>“{item.quote}”</p>
+                <footer>{item.author}</footer>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section sectionLight">
+        <div className="shell closingGrid">
+          <div className="imageCard imageCardTall">
+            <Image
+              src="/images/pages/riccardo-stage.jpg"
+              alt="Riccardo performing on stage"
+              width={2500}
+              height={1406}
+              className="featureImage"
+            />
+          </div>
+          <div id="contact" className="contactBlock">
+            <p className="eyebrow">Get in touch</p>
+            <h2>Please reach out with any questions, product inquiries, or simply to tell us your story.</h2>
+            <p className="bodyCopy">
+              If this could help you, your child, your students, or your program, we want to hear from you.
+            </p>
+            <div className="heroActions">
+              <a href="mailto:info@resonateadaptive.com" className="button buttonPrimary">Email us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
