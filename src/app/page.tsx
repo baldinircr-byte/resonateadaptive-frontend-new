@@ -97,7 +97,7 @@ export default function Home() {
       <section id="why" className="section sectionDark">
         <div className="shell">
           <p className="eyebrow eyebrowLight">Our Why</p>
-          <h2 className="sectionTitleLight">A device like this matters because people have already been waiting for it.</h2>
+          <h2 className="sectionTitleLight">The stories people share are why we keep building Resonate.</h2>
           <div className="testimonialGrid">
             {testimonials.map((item) => (
               <blockquote key={item.author} className="testimonialCard">
