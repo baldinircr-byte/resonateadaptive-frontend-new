@@ -56,15 +56,14 @@ img {
 
 .heroImage {
   object-fit: cover;
-  object-position: center 38%;
-  filter: grayscale(100%);
+  object-position: center center;
 }
 
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.42) 42%, rgba(0,0,0,0.25) 100%),
-    linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.22) 45%, rgba(0,0,0,0.58) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.66) 0%, rgba(0,0,0,0.34) 42%, rgba(0,0,0,0.24) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.18) 45%, rgba(0,0,0,0.62) 100%);
 }
 
 .heroContent {

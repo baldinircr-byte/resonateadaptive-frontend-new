@@ -38,7 +38,7 @@ export default function Home() {
     <main>
       <section className="hero">
         <Image
-          src="/images/pages/hero-wheelchair.jpg"
+          src="/images/pages/hero-main.jpg"
           alt="Riccardo playing the piano in a wheelchair"
           fill
           priority
