@@ -109,10 +109,10 @@ export default function Home() {
         <div className="shell closingGrid">
           <div className="imageCard imageCardTall">
             <Image
-              src="/images/pages/riccardo-stage.jpg"
-              alt="Riccardo performing on stage"
-              width={2500}
-              height={1406}
+              src="/images/pages/get-in-touch.jpg"
+              alt="Riccardo playing piano in a wheelchair"
+              width={1280}
+              height={853}
               className="featureImage"
             />
           </div>
