@@ -79,7 +79,7 @@ export default function Home() {
               Resonate exists to restore that missing part of piano expression.
             </p>
             <p className="bodyCopy muted">
-              This is not about a novelty adaptation. It is about restoring sustain, phrasing, and the ability to engage the piano more fully.
+              This is about restoring full expression at the piano.
             </p>
           </div>
           <div className="imageCard">
