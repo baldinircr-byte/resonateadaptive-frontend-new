@@ -73,7 +73,7 @@ export default function Home() {
         <div className="shell storyGrid">
           <div>
             <p className="eyebrow">The idea</p>
-            <h2>A clear problem. A real need. A meaningful reason to build.</h2>
+            <h2>A clear problem. A real need. A meaningful solution.</h2>
             <p className="bodyCopy">
               For pianists who cannot use their lower limbs, the damper pedal becomes an access barrier to the instrument itself. Resonate exists to restore full expression at the piano.
             </p>
