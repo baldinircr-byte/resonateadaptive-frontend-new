@@ -10,7 +10,7 @@ export default function OurStoryPage() {
           <h1>Let OUR Story become YOUR Story.</h1>
         </div>
 
-        <div className="storyGallery">
+        <div className="storyGallery storyGallerySingle">
           <div className="imageCard storyGalleryMain">
             <Image
               src="/images/pages/about-riccardo.jpg"
@@ -20,26 +20,6 @@ export default function OurStoryPage() {
               className="featureImage"
               priority
             />
-          </div>
-          <div className="storyGallerySide">
-            <div className="imageCard">
-              <Image
-                src="/images/pages/hero-wheelchair.jpg"
-                alt="Riccardo playing piano in a wheelchair"
-                width={1600}
-                height={1200}
-                className="featureImage"
-              />
-            </div>
-            <div className="imageCard">
-              <Image
-                src="/images/pages/hero-main.jpg"
-                alt="Riccardo performing at the piano"
-                width={1600}
-                height={1067}
-                className="featureImage"
-              />
-            </div>
           </div>
         </div>
 

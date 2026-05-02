@@ -375,6 +375,10 @@ img {
   gap: 20px;
 }
 
+.storyGallerySingle {
+  grid-template-columns: 1fr;
+}
+
 .storyGalleryMain {
   min-height: 560px;
 }
