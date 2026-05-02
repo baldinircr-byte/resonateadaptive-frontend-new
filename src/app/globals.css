@@ -284,6 +284,62 @@ img {
   font-size: clamp(2.2rem, 4vw, 4.2rem);
 }
 
+.contactForm {
+  margin-top: 28px;
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #5c564d;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(23, 23, 23, 0.14);
+  border-radius: 16px;
+  background: white;
+  color: #171717;
+  padding: 14px 16px;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 148px;
+}
+
+.formButton {
+  width: fit-content;
+  border: 0;
+  cursor: pointer;
+}
+
+.formButton:disabled {
+  opacity: 0.72;
+  cursor: wait;
+}
+
+.formFeedback {
+  font-size: 0.95rem;
+  color: #2d6b46;
+}
+
+.formFeedbackError {
+  color: #9f2d2d;
+}
+
 @media (max-width: 960px) {
   .storyGrid,
   .closingGrid,

@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { ContactForm } from "@/components/contact-form";
+
 const testimonials = [
   {
     quote:
@@ -134,9 +136,7 @@ export default function Home() {
             <p className="bodyCopy">
               If this could help you, your child, your students, or your program, we want to hear from you.
             </p>
-            <div className="heroActions">
-              <a href="mailto:info@resonateadaptive.com" className="button buttonPrimary">Email us</a>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>
