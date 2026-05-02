@@ -90,6 +90,53 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="product" className="section sectionLight">
+        <div className="shell storyGrid">
+          <div>
+            <p className="eyebrow">Product</p>
+            <h2>Resonate is being built to restore pedal access and full expression at the piano.</h2>
+            <p className="bodyCopy">
+              This section is where product photos, a clearer device explanation, and the key features of Resonate will live.
+            </p>
+            <p className="bodyCopy muted">
+              We will also add a shop button here later through Shopify, along with financing options.
+            </p>
+            <div className="heroActions">
+              <span className="button buttonMuted">Product photos coming soon</span>
+            </div>
+          </div>
+          <div className="imagePlaceholderCard">
+            <div className="imagePlaceholderInner">
+              <p>Product photography and product details will be added here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="section sectionLight sectionLightAlt">
+        <div className="shell storyGrid">
+          <div className="imageCard imageCardTall">
+            <Image
+              src="/images/pages/mouthpiece.jpg"
+              alt="Resonate mouthpiece"
+              width={1500}
+              height={1090}
+              className="featureImage"
+            />
+          </div>
+          <div>
+            <p className="eyebrow">About</p>
+            <h2>Resonate began with a personal need and is growing into something bigger.</h2>
+            <p className="bodyCopy">
+              This section will introduce the people behind Resonate, explain how the project began, and give the right amount of founder context.
+            </p>
+            <p className="bodyCopy muted">
+              For now, it marks the place where the shorter about story will sit inside the homepage flow.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="why" className="section sectionDark">
         <div className="shell">
           <p className="eyebrow eyebrowLight">Our Why</p>

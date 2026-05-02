@@ -163,6 +163,12 @@ img {
   background: rgba(255,255,255,0.04);
 }
 
+.buttonMuted {
+  border: 1px solid rgba(23,23,23,0.1);
+  background: rgba(23,23,23,0.04);
+  color: #3d3934;
+}
+
 .section {
   padding: 88px 0;
 }
@@ -175,6 +181,10 @@ img {
 .sectionDark {
   background: var(--dark);
   color: white;
+}
+
+.sectionLightAlt {
+  background: #f1ede6;
 }
 
 .eyebrow {
@@ -193,11 +203,33 @@ img {
   align-items: center;
 }
 
-.imageCard {
+.imageCard,
+.imagePlaceholderCard {
   border-radius: 28px;
   overflow: hidden;
   background: #ddd;
   box-shadow: 0 24px 70px rgba(0,0,0,0.08);
+}
+
+.imagePlaceholderCard {
+  min-height: 420px;
+  background: linear-gradient(180deg, #f4f1ea 0%, #e8e1d5 100%);
+  border: 1px solid rgba(23, 23, 23, 0.08);
+}
+
+.imagePlaceholderInner {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  text-align: center;
+}
+
+.imagePlaceholderInner p {
+  max-width: 26ch;
+  color: #5c564d;
+  line-height: 1.8;
 }
 
 .imageCardTall {
