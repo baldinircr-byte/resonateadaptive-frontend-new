@@ -30,7 +30,9 @@ export function HeroNav() {
           aria-label="Toggle navigation menu"
           onClick={() => setOpen((value) => !value)}
         >
-          Menu
+          <span />
+          <span />
+          <span />
         </button>
         {open ? (
           <nav className="heroNavMobile" aria-label="Mobile section navigation">
