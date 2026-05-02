@@ -116,7 +116,7 @@ export default function Home() {
           </div>
           <div>
             <p className="eyebrow">About</p>
-            <h2>Resonate began with Riccardo’s search for a way back to the full piano.</h2>
+            <h2>Resonate began with Riccardo’s search to regain the full potential of the piano.</h2>
             <p className="bodyCopy">
               After a spinal cord injury made the traditional pedal system inaccessible, Resonate began as a personal
               effort to restore access, expression, and possibility at the instrument.
