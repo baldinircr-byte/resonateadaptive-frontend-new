@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ContactForm } from "@/components/contact-form";
+import { HeroNav } from "@/components/hero-nav";
 
 const testimonials = [
   {
@@ -58,12 +59,7 @@ export default function Home() {
               className="heroLogo"
               priority
             />
-            <nav className="heroNav" aria-label="Section navigation">
-              <a href="#product">Product</a>
-              <a href="#about">About</a>
-              <a href="#why">Our Why</a>
-              <a href="#contact">Contact</a>
-            </nav>
+            <HeroNav />
           </div>
           <div className="heroTextBlock">
             <p className="heroKicker">Play Without Limits</p>
