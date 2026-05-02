@@ -91,25 +91,8 @@ export default function Home() {
       </section>
 
       <section id="product" className="section sectionLight">
-        <div className="shell storyGrid">
-          <div>
-            <p className="eyebrow">Product</p>
-            <h2>Resonate is being built to restore pedal access and full expression at the piano.</h2>
-            <p className="bodyCopy">
-              This section is where product photos, a clearer device explanation, and the key features of Resonate will live.
-            </p>
-            <p className="bodyCopy muted">
-              We will also add a shop button here later through Shopify, along with financing options.
-            </p>
-            <div className="heroActions">
-              <span className="button buttonMuted">Product photos coming soon</span>
-            </div>
-          </div>
-          <div className="imagePlaceholderCard">
-            <div className="imagePlaceholderInner">
-              <p>Product photography and product details will be added here.</p>
-            </div>
-          </div>
+        <div className="shell">
+          <p className="eyebrow">PRODUCT</p>
         </div>
       </section>
 
