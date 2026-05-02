@@ -97,26 +97,8 @@ export default function Home() {
       </section>
 
       <section id="about" className="section sectionLight sectionLightAlt">
-        <div className="shell storyGrid">
-          <div className="imageCard imageCardTall">
-            <Image
-              src="/images/pages/mouthpiece.jpg"
-              alt="Resonate mouthpiece"
-              width={1500}
-              height={1090}
-              className="featureImage"
-            />
-          </div>
-          <div>
-            <p className="eyebrow">About</p>
-            <h2>Resonate began with a personal need and is growing into something bigger.</h2>
-            <p className="bodyCopy">
-              This section will introduce the people behind Resonate, explain how the project began, and give the right amount of founder context.
-            </p>
-            <p className="bodyCopy muted">
-              For now, it marks the place where the shorter about story will sit inside the homepage flow.
-            </p>
-          </div>
+        <div className="shell">
+          <p className="eyebrow">ABOUT</p>
         </div>
       </section>
 
