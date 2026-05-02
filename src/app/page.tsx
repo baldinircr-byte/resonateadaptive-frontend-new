@@ -49,14 +49,22 @@ export default function Home() {
         />
         <div className="heroOverlay" />
         <div className="shell heroContent">
-          <Image
-            src="/images/site/logo-dark.png"
-            alt="Resonate Adaptive"
-            width={2500}
-            height={751}
-            className="heroLogo"
-            priority
-          />
+          <div className="heroTopbar">
+            <Image
+              src="/images/site/logo-dark.png"
+              alt="Resonate Adaptive"
+              width={2500}
+              height={751}
+              className="heroLogo"
+              priority
+            />
+            <nav className="heroNav" aria-label="Section navigation">
+              <a href="#product">Product</a>
+              <a href="#about">About</a>
+              <a href="#why">Our Why</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
           <div className="heroTextBlock">
             <p className="heroKicker">Play Without Limits</p>
             <h1>Make Music Accessible</h1>

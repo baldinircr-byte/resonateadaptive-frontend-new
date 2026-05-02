@@ -75,6 +75,13 @@ img {
   padding: 28px 0 54px;
 }
 
+.heroTopbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .heroLogo {
   width: clamp(180px, 24vw, 320px);
   height: auto;
@@ -83,6 +90,21 @@ img {
 
 .heroTextBlock {
   max-width: 720px;
+}
+
+.heroNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.heroNav a {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(255,255,255,0.82);
 }
 
 .heroKicker,
@@ -420,11 +442,21 @@ img {
     grid-template-columns: 1fr;
   }
 
-   .heroContent {
-     padding: 22px 0 42px;
-   }
- 
-   .hero h1 {
-     max-width: 11ch;
-   }
- }
+  .heroTopbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroNav {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .heroContent {
+    padding: 22px 0 42px;
+  }
+
+  .hero h1 {
+    max-width: 11ch;
+  }
+}
