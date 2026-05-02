@@ -56,14 +56,14 @@ img {
 
 .heroImage {
   object-fit: cover;
-  object-position: center center;
+  object-position: 62% center;
 }
 
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,0.66) 0%, rgba(0,0,0,0.34) 42%, rgba(0,0,0,0.24) 100%),
-    linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.18) 45%, rgba(0,0,0,0.62) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.54) 0%, rgba(0,0,0,0.24) 42%, rgba(0,0,0,0.14) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.12) 45%, rgba(0,0,0,0.48) 100%);
 }
 
 .heroContent {
@@ -524,6 +524,10 @@ img {
 
   .heroMenuButton {
     display: inline-flex;
+  }
+
+  .heroImage {
+    object-position: 68% center;
   }
 
   .heroContent {
