@@ -30,7 +30,7 @@ export default function OurStoryPage() {
             I am.
           </p>
           <p>
-            In 2019, a spinal cord injury left me paralyzed from the waist down. Overnight, everything changed—including
+            In 2019, a spinal cord injury left me paralyzed from the chest down. Overnight, everything changed—including
             my ability to play the piano the way I always had. Without lower limb function, using the traditional pedal
             system was no longer possible.
           </p>
