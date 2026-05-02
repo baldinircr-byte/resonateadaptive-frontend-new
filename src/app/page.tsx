@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { ContactForm } from "@/components/contact-form";
 
@@ -99,8 +100,27 @@ export default function Home() {
       </section>
 
       <section id="about" className="section sectionLight sectionLightAlt">
-        <div className="shell">
-          <p className="eyebrow">ABOUT</p>
+        <div className="shell storyGrid">
+          <div className="imageCard imageCardTall">
+            <Image
+              src="/images/pages/about-riccardo.jpg"
+              alt="Riccardo seated at the piano"
+              width={1200}
+              height={900}
+              className="featureImage"
+            />
+          </div>
+          <div>
+            <p className="eyebrow">About</p>
+            <h2>Resonate began with Riccardo’s search for a way back to the full piano.</h2>
+            <p className="bodyCopy">
+              After a spinal cord injury made the traditional pedal system inaccessible, Resonate began as a personal
+              effort to restore access, expression, and possibility at the instrument.
+            </p>
+            <div className="heroActions">
+              <Link href="/our-story" className="button buttonDark">Our Story</Link>
+            </div>
+          </div>
         </div>
       </section>
 
