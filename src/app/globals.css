@@ -114,21 +114,21 @@ img {
 
 .heroMenuButton {
   display: none;
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgba(255,255,255,0.22);
-  background: rgba(255,255,255,0.06);
-  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
   padding: 0;
   cursor: pointer;
 }
 
 .heroMenuButton span {
   display: block;
-  width: 18px;
-  height: 1.5px;
-  margin: 4px auto;
-  background: rgba(255,255,255,0.88);
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  background: rgba(255,255,255,0.92);
   border-radius: 999px;
 }
 
