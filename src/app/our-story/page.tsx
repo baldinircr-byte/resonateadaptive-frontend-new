@@ -10,16 +10,37 @@ export default function OurStoryPage() {
           <h1>Let OUR Story become YOUR Story.</h1>
         </div>
 
-        <div className="storyGallery storyGallerySingle">
-          <div className="imageCard storyGalleryMain">
-            <Image
-              src="/images/pages/about-riccardo.jpg"
-              alt="Riccardo seated at the piano"
-              width={1200}
-              height={900}
-              className="featureImage"
-              priority
-            />
+        <div className="storyPeopleGrid">
+          <div className="storyPersonCard">
+            <div className="imageCard storyGalleryMain">
+              <Image
+                src="/images/pages/about-riccardo.jpg"
+                alt="Riccardo seated at the piano"
+                width={1200}
+                height={900}
+                className="featureImage"
+                priority
+              />
+            </div>
+            <div className="storyPersonMeta">
+              <p className="storyPersonName">Riccardo Baldini</p>
+              <p className="storyPersonRole">Co-Founder</p>
+            </div>
+          </div>
+          <div className="storyPersonCard">
+            <div className="imageCard storyGalleryMain">
+              <Image
+                src="/images/pages/steve-bosch.jpg"
+                alt="Steve Bosch"
+                width={1200}
+                height={900}
+                className="featureImage"
+              />
+            </div>
+            <div className="storyPersonMeta">
+              <p className="storyPersonName">Steve Bosch</p>
+              <p className="storyPersonRole">Co-Founder</p>
+            </div>
           </div>
         </div>
 
