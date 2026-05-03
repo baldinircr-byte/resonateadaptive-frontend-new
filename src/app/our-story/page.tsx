@@ -5,6 +5,17 @@ export default function OurStoryPage() {
   return (
     <main className="section sectionLight storyPage">
       <div className="shell storyPageShell">
+        <Link href="/#top" className="storyPageLogoLink" aria-label="Back to homepage hero">
+          <Image
+            src="/images/site/logo-dark.png"
+            alt="Resonate Adaptive"
+            width={2500}
+            height={751}
+            className="storyPageLogo"
+            priority
+          />
+        </Link>
+
         <div className="storyPageIntro">
           <p className="eyebrow">Our Story</p>
           <h1>Let OUR Story become YOUR Story.</h1>

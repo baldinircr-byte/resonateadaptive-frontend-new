@@ -42,7 +42,7 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <main>
+    <main id="top">
       <section className="hero">
         <Image
           src="/images/pages/hero-main.jpg"

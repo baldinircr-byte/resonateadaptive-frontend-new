@@ -588,6 +588,16 @@ h6,
   gap: 40px;
 }
 
+.storyPageLogoLink {
+  display: inline-flex;
+  width: fit-content;
+}
+
+.storyPageLogo {
+  width: clamp(140px, 18vw, 220px);
+  height: auto;
+}
+
 .storyPageIntro h1 {
   margin-top: 14px;
   max-width: 12ch;
