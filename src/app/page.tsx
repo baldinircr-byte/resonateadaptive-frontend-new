@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ContactForm } from "@/components/contact-form";
+import { ExpandableSpecImage } from "@/components/expandable-spec-image";
 import { Footer } from "@/components/footer";
 import { ProductCheckoutButton } from "@/components/product-checkout-button";
 import { SiteNav } from "@/components/site-nav";
@@ -103,7 +104,8 @@ export default function Home() {
       <section id="product" className="section sectionLight">
         <div className="shell storyGrid productGrid">
           <div>
-            <p className="eyebrow">Order Resonate</p>
+            <p className="eyebrow">The Product</p>
+            <p className="productSubeyebrow">Order Resonate</p>
             <h2>Resonate Adaptive is now available for purchase in limited quantities.</h2>
             <p className="bodyCopy">
               Orders are currently being accepted online. Financing options are planned and will be integrated here as soon as they are available.
@@ -159,13 +161,7 @@ export default function Home() {
           </div>
 
           <div className="imageCard productDrawingCard">
-            <Image
-              src="/images/pages/resonate-drawing.png"
-              alt="Technical drawing of the Resonate Adaptive device"
-              width={1200}
-              height={800}
-              className="productDrawingImage"
-            />
+            <ExpandableSpecImage />
           </div>
         </div>
       </section>

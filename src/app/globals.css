@@ -322,6 +322,15 @@ h6,
   color: #6f695f;
 }
 
+.productSubeyebrow {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9a9185;
+}
+
 .eyebrowLight {
   color: rgba(255,255,255,0.62);
 }
@@ -435,12 +444,70 @@ h6,
   border: 1px solid rgba(23, 23, 23, 0.08);
 }
 
+.specImageTrigger {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: white;
+  cursor: zoom-in;
+}
+
 .productDrawingImage {
   width: 100%;
   height: 100%;
   object-fit: contain;
   padding: 24px;
   background: white;
+}
+
+.specImageHint {
+  display: block;
+  padding: 0 24px 22px;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6f695f;
+}
+
+.specDialogOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 16, 0.82);
+  backdrop-filter: blur(4px);
+  z-index: 80;
+}
+
+.specDialogContent {
+  position: fixed;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: min(1200px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  padding: 20px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
+  z-index: 81;
+  overflow: auto;
+}
+
+.specDialogImage {
+  width: 100%;
+  height: auto;
+}
+
+.specDialogClose {
+  margin-top: 14px;
+  border: 1px solid rgba(23,23,23,0.12);
+  background: rgba(23,23,23,0.03);
+  color: #171717;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .productCheckoutWrap {
