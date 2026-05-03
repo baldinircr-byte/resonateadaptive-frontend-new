@@ -10,8 +10,6 @@ export function ProductCheckoutButton() {
     setLoading(true);
     setError("");
 
-    const checkoutWindow = window.open("", "_blank", "noopener,noreferrer");
-
     try {
       const response = await fetch("/api/checkout/session", {
         method: "POST",
@@ -24,25 +22,13 @@ export function ProductCheckoutButton() {
       const data = (await response.json()) as { url?: string; error?: string };
 
       if (!response.ok || !data.url) {
-        if (checkoutWindow) {
-          checkoutWindow.close();
-        }
         setError(data.error ?? "Checkout is not configured yet.");
         setLoading(false);
         return;
       }
 
-      if (checkoutWindow) {
-        checkoutWindow.location.href = data.url;
-      } else {
-        window.open(data.url, "_blank", "noopener,noreferrer");
-      }
-
-      setLoading(false);
+      window.location.href = data.url;
     } catch {
-      if (checkoutWindow) {
-        checkoutWindow.close();
-      }
       setError("Unable to start checkout right now.");
       setLoading(false);
     }
