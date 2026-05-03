@@ -1,7 +1,6 @@
 "use client";
 
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-import * as ScrollArea from "@radix-ui/react-scroll-area";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -15,6 +14,7 @@ const links = [
 
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -37,37 +37,51 @@ export function SiteNav() {
         </NavigationMenu.List>
       </NavigationMenu.Root>
 
-      <div className={`mobileStickyNav ${scrolled ? "mobileStickyNavVisible" : ""}`}>
-        <Link href="/" className="mobileStickyBrand" aria-label="Resonate Adaptive home">
-          <Image
-            src="/images/site/logo-dark.png"
-            alt="Resonate Adaptive"
-            width={2500}
-            height={751}
-            className="mobileStickyLogo"
-          />
-        </Link>
+      <div className={`mobileStickyHeader ${scrolled ? "mobileStickyHeaderVisible" : ""}`}>
+        <div className="mobileStickyHeaderInner">
+          <Link
+            href="/"
+            className="mobileStickyBrand"
+            aria-label="Resonate Adaptive home"
+            onClick={() => setOpen(false)}
+          >
+            <Image
+              src="/images/site/logo-dark.png"
+              alt="Resonate Adaptive"
+              width={2500}
+              height={751}
+              className="mobileStickyLogo"
+            />
+          </Link>
 
-        <ScrollArea.Root className="mobileStickyScrollArea" type="hover">
-          <ScrollArea.Viewport className="mobileStickyViewport">
-            <NavigationMenu.Root className="mobileStickyMenuRoot" orientation="horizontal">
-              <NavigationMenu.List className="mobileStickyList">
-                {links.map((link) => (
-                  <NavigationMenu.Item key={link.href}>
-                    <NavigationMenu.Link asChild>
-                      <a href={link.href} className="mobileStickyLink">
-                        {link.label}
-                      </a>
-                    </NavigationMenu.Link>
-                  </NavigationMenu.Item>
-                ))}
-              </NavigationMenu.List>
-            </NavigationMenu.Root>
-          </ScrollArea.Viewport>
-          <ScrollArea.Scrollbar className="scrollAreaScrollbar" orientation="horizontal">
-            <ScrollArea.Thumb className="scrollAreaThumb" />
-          </ScrollArea.Scrollbar>
-        </ScrollArea.Root>
+          <button
+            type="button"
+            className="mobileStickyMenuButton"
+            aria-expanded={open}
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((value) => !value)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
+
+        <div className={`mobileStickyPanel ${open ? "mobileStickyPanelOpen" : ""}`}>
+          <NavigationMenu.Root>
+            <NavigationMenu.List className="mobileStickyPanelList">
+              {links.map((link) => (
+                <NavigationMenu.Item key={link.href}>
+                  <NavigationMenu.Link asChild>
+                    <a href={link.href} className="mobileStickyPanelLink" onClick={() => setOpen(false)}>
+                      {link.label}
+                    </a>
+                  </NavigationMenu.Link>
+                </NavigationMenu.Item>
+              ))}
+            </NavigationMenu.List>
+          </NavigationMenu.Root>
+        </div>
       </div>
     </>
   );
