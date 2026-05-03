@@ -53,10 +53,10 @@ export async function POST(request: Request) {
       },
       custom_fields: [
         {
-          key: "shipping_acknowledgement",
+          key: "shipping_ack",
           label: {
             type: "custom",
-            custom: "I understand shipping is billed separately after purchase.",
+            custom: "Shipping billed separately",
           },
           type: "dropdown",
           dropdown: {
