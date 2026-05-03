@@ -103,10 +103,10 @@ export default function Home() {
       <section id="product" className="section sectionLight">
         <div className="shell storyGrid productGrid">
           <div>
-            <p className="eyebrow">Product</p>
-            <h2>Resonate Adaptive</h2>
+            <p className="eyebrow">Order Resonate</p>
+            <h2>Resonate Adaptive is now available for purchase in limited quantities.</h2>
             <p className="bodyCopy">
-              A purpose-built adaptive device designed to restore access to the full potential of the piano for musicians who cannot use the traditional damper pedal with their lower limbs.
+              Orders are currently being accepted online. Financing options are planned and will be integrated here as soon as they are available.
             </p>
 
             <div className="productMetaGrid">
@@ -116,29 +116,38 @@ export default function Home() {
                 <p className="productMetaNote">Shipping is billed separately.</p>
               </div>
               <div className="productMetaCard">
-                <p className="productMetaLabel">Status</p>
-                <p className="productMetaValue">First production run</p>
-                <p className="productMetaNote">Orders are now being accepted.</p>
+                <p className="productMetaLabel">Availability</p>
+                <p className="productMetaValue">Limited quantities</p>
+                <p className="productMetaNote">Current release available now.</p>
               </div>
             </div>
 
             <div className="productDetailList">
               <div>
-                <p className="productMetaLabel">What it does</p>
+                <p className="productMetaLabel">What’s included</p>
+                <ul className="productList bodyCopy compactCopy">
+                  <li>Resonate Adaptive unit</li>
+                  <li>Bite Switch</li>
+                  <li>AC/DC Power Supply</li>
+                </ul>
+              </div>
+              <div>
+                <p className="productMetaLabel">Dimensions & Weight</p>
                 <p className="bodyCopy compactCopy">
-                  Resonate gives pianists a new way to control the sustain pedal without relying on lower limb function, restoring access to phrasing, sustain, and a fuller experience of the instrument.
+                  24 lbs / 10.8 kg
+                </p>
+                <p className="productMetaNote">Reference drawing shown for current device dimensions.</p>
+              </div>
+              <div>
+                <p className="productMetaLabel">Shipping</p>
+                <p className="bodyCopy compactCopy">
+                  Shipping is charged separately and arranged after purchase. The customer is responsible for shipping costs.
                 </p>
               </div>
               <div>
-                <p className="productMetaLabel">What happens at checkout</p>
+                <p className="productMetaLabel">Warranty</p>
                 <p className="bodyCopy compactCopy">
-                  Customers can complete purchase online now. Shipping details are collected during checkout, and shipping is arranged separately afterward so purchase is never blocked by shipping calculation issues.
-                </p>
-              </div>
-              <div>
-                <p className="productMetaLabel">Financing</p>
-                <p className="bodyCopy compactCopy">
-                  Financing options are planned and will be integrated here as soon as they are available.
+                  1 year limited warranty.
                 </p>
               </div>
             </div>
@@ -149,15 +158,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="imagePlaceholderCard productPlaceholderCard">
-            <div className="imagePlaceholderInner">
-              <div>
-                <p className="productPlaceholderTitle">Product photo coming soon</p>
-                <p>
-                  This space is reserved for product photography, installation detail, and a clearer visual explanation of the device.
-                </p>
-              </div>
-            </div>
+          <div className="imageCard productDrawingCard">
+            <Image
+              src="/images/pages/resonate-drawing.png"
+              alt="Technical drawing of the Resonate Adaptive device"
+              width={1200}
+              height={800}
+              className="productDrawingImage"
+            />
           </div>
         </div>
       </section>
