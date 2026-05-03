@@ -160,8 +160,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="imageCard productDrawingCard">
-            <ExpandableSpecImage />
+          <div className="productVisualStack">
+            <div className="imageCard productPhotoCard">
+              <Image
+                src="/images/pages/resonate-product.jpg"
+                alt="Resonate Adaptive product photo"
+                width={1200}
+                height={900}
+                className="featureImage"
+              />
+            </div>
+            <div className="imageCard productDrawingCard">
+              <ExpandableSpecImage />
+            </div>
           </div>
         </div>
       </section>

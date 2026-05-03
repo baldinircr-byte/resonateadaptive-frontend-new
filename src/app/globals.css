@@ -439,6 +439,12 @@ h6,
   gap: 8px;
 }
 
+.productVisualStack {
+  display: grid;
+  gap: 20px;
+}
+
+.productPhotoCard,
 .productDrawingCard {
   background: white;
   border: 1px solid rgba(23, 23, 23, 0.08);
