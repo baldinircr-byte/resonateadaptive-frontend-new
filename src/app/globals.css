@@ -294,6 +294,12 @@ h6,
   border: 1px solid rgba(23, 23, 23, 0.08);
 }
 
+.buttonSecondaryOnLight {
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  color: #171717;
+  background: rgba(23, 23, 23, 0.03);
+}
+
 .section {
   padding: 88px 0;
 }
@@ -355,6 +361,76 @@ h6,
   max-width: 26ch;
   color: #5c564d;
   line-height: 1.8;
+}
+
+.productGrid {
+  align-items: start;
+}
+
+.productMetaGrid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.productMetaCard {
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  background: white;
+  border-radius: 22px;
+  padding: 20px;
+}
+
+.productMetaLabel {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6f695f;
+}
+
+.productMetaValue {
+  margin-top: 12px;
+  font-family: var(--font-heading), Arial, Helvetica, sans-serif;
+  font-size: 1.55rem;
+  line-height: 1.15;
+  color: #171717;
+}
+
+.productMetaNote {
+  margin-top: 10px;
+  color: #5c564d;
+  line-height: 1.7;
+}
+
+.productDetailList {
+  margin-top: 28px;
+  display: grid;
+  gap: 22px;
+}
+
+.compactCopy {
+  margin-top: 10px;
+}
+
+.productPlaceholderCard {
+  min-height: 100%;
+}
+
+.productPlaceholderTitle {
+  margin-bottom: 10px;
+  font-family: var(--font-heading), Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  color: #171717;
+}
+
+.productCheckoutWrap {
+  display: grid;
+  gap: 12px;
+}
+
+.productCheckoutButton {
+  border: 0;
 }
 
 .imageCardTall {
@@ -475,6 +551,28 @@ h6,
 
 .formFeedbackError {
   color: #9f2d2d;
+}
+
+.checkoutStatePage {
+  max-width: 760px;
+  display: grid;
+  gap: 22px;
+}
+
+.checkoutStatePage h1 {
+  font-family: var(--font-heading), Arial, Helvetica, sans-serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 0.98;
+}
+
+.checkoutStateCard {
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  gap: 10px;
+  line-height: 1.8;
 }
 
 .storyPage {
@@ -630,7 +728,8 @@ h6,
   .storyGallery,
   .storyPeopleGrid,
   .footerInner,
-  .footerMetaGrid {
+  .footerMetaGrid,
+  .productMetaGrid {
     grid-template-columns: 1fr;
   }
 

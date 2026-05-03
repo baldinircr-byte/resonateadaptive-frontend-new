@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
+import { ProductCheckoutButton } from "@/components/product-checkout-button";
 import { SiteNav } from "@/components/site-nav";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
 
@@ -100,8 +101,64 @@ export default function Home() {
       </section>
 
       <section id="product" className="section sectionLight">
-        <div className="shell">
-          <p className="eyebrow">PRODUCT</p>
+        <div className="shell storyGrid productGrid">
+          <div>
+            <p className="eyebrow">Product</p>
+            <h2>Resonate Adaptive</h2>
+            <p className="bodyCopy">
+              A purpose-built adaptive device designed to restore access to the full potential of the piano for musicians who cannot use the traditional damper pedal with their lower limbs.
+            </p>
+
+            <div className="productMetaGrid">
+              <div className="productMetaCard">
+                <p className="productMetaLabel">Price</p>
+                <p className="productMetaValue">C$4,800</p>
+                <p className="productMetaNote">Shipping is billed separately.</p>
+              </div>
+              <div className="productMetaCard">
+                <p className="productMetaLabel">Status</p>
+                <p className="productMetaValue">First production run</p>
+                <p className="productMetaNote">Orders are now being accepted.</p>
+              </div>
+            </div>
+
+            <div className="productDetailList">
+              <div>
+                <p className="productMetaLabel">What it does</p>
+                <p className="bodyCopy compactCopy">
+                  Resonate gives pianists a new way to control the sustain pedal without relying on lower limb function, restoring access to phrasing, sustain, and a fuller experience of the instrument.
+                </p>
+              </div>
+              <div>
+                <p className="productMetaLabel">What happens at checkout</p>
+                <p className="bodyCopy compactCopy">
+                  Customers can complete purchase online now. Shipping details are collected during checkout, and shipping is arranged separately afterward so purchase is never blocked by shipping calculation issues.
+                </p>
+              </div>
+              <div>
+                <p className="productMetaLabel">Financing</p>
+                <p className="bodyCopy compactCopy">
+                  Financing options are planned and will be integrated here as soon as they are available.
+                </p>
+              </div>
+            </div>
+
+            <div className="heroActions">
+              <ProductCheckoutButton />
+              <a href="#contact" className="button buttonSecondaryOnLight">Product questions</a>
+            </div>
+          </div>
+
+          <div className="imagePlaceholderCard productPlaceholderCard">
+            <div className="imagePlaceholderInner">
+              <div>
+                <p className="productPlaceholderTitle">Product photo coming soon</p>
+                <p>
+                  This space is reserved for product photography, installation detail, and a clearer visual explanation of the device.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
