@@ -443,6 +443,10 @@ h6,
   object-fit: cover;
 }
 
+.featureImageSteve {
+  object-position: center 24%;
+}
+
 .sectionLight h2,
 .sectionTitleLight {
   margin-top: 12px;

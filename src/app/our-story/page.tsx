@@ -34,7 +34,7 @@ export default function OurStoryPage() {
                 alt="Steve Bosch"
                 width={1200}
                 height={900}
-                className="featureImage"
+                className="featureImage featureImageSteve"
               />
             </div>
             <div className="storyPersonMeta">
