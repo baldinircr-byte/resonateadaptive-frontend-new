@@ -21,7 +21,7 @@ body {
   min-height: 100%;
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,6 +40,20 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.button,
+.eyebrow,
+.heroNav a,
+.mobileStickyLink,
+.footerLabel {
+  font-family: var(--font-heading), Arial, Helvetica, sans-serif;
 }
 
 .shell {
@@ -83,7 +97,7 @@ img {
 }
 
 .heroLogo {
-  width: clamp(180px, 24vw, 320px);
+  width: clamp(138px, 15vw, 220px);
   height: auto;
   filter: brightness(0) invert(1);
 }
@@ -94,65 +108,93 @@ img {
 
 .heroNav {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-end;
-  gap: 18px;
+}
+
+.heroNavList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
 }
 
 .heroNav a,
-.heroNavMobile a {
-  font-size: 0.8rem;
-  letter-spacing: 0.14em;
+.mobileStickyLink {
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.heroNav a {
   color: rgba(255,255,255,0.82);
 }
 
-.heroNavMobileWrap {
-  position: relative;
+.mobileStickyNav {
+  display: none;
 }
 
-.heroMenuButton {
-  display: none;
-  width: 44px;
-  height: 44px;
-  border: 0;
-  background: transparent;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  flex-direction: column;
+.mobileStickyBrand {
+  flex: 0 0 auto;
+}
+
+.mobileStickyLogo {
+  width: 116px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.mobileStickyScrollArea {
+  width: 100%;
+}
+
+.mobileStickyViewport {
+  width: 100%;
+}
+
+.mobileStickyMenuRoot {
+  width: max-content;
+}
+
+.mobileStickyList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+}
+
+.mobileStickyLink {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-}
-
-.heroMenuButton span {
-  display: block;
-  width: 26px;
-  height: 3px;
-  margin: 0;
-  background: rgba(255,255,255,0.92);
+  min-height: 38px;
+  padding: 0 14px;
   border-radius: 999px;
-}
-
-.heroNavMobile {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  min-width: 180px;
-  display: grid;
-  gap: 2px;
-  padding: 10px;
-  border-radius: 18px;
-  background: rgba(15,15,16,0.94);
+  white-space: nowrap;
+  color: rgba(255,255,255,0.88);
+  background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.28);
 }
 
-.heroNavMobile a {
-  padding: 10px 12px;
-  border-radius: 12px;
+.scrollAreaScrollbar {
+  display: flex;
+  user-select: none;
+  touch-action: none;
+  padding: 2px;
+}
+
+.scrollAreaScrollbar[data-orientation="horizontal"] {
+  height: 10px;
+}
+
+.scrollAreaThumb {
+  position: relative;
+  flex: 1;
+  background: rgba(255,255,255,0.24);
+  border-radius: 999px;
 }
 
 .heroKicker,
@@ -169,9 +211,9 @@ img {
 
 .hero h1,
 .section h2 {
-  font-size: clamp(2.4rem, 4.8vw, 4.8rem);
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+  font-size: clamp(2.15rem, 4.2vw, 4.15rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
   font-weight: 600;
   text-wrap: balance;
 }
@@ -184,8 +226,8 @@ img {
 .heroLead,
 .bodyCopy {
   margin-top: 24px;
-  font-size: 1.05rem;
-  line-height: 1.9;
+  font-size: 1rem;
+  line-height: 1.85;
   max-width: 62ch;
 }
 
@@ -215,7 +257,7 @@ img {
   min-height: 46px;
   padding: 0 20px;
   border-radius: 999px;
-  font-size: 0.86rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -326,22 +368,34 @@ img {
 .sectionLight h2,
 .sectionTitleLight {
   margin-top: 12px;
-  max-width: 13ch;
-  font-size: clamp(1.9rem, 3.6vw, 3.3rem);
+  max-width: 14ch;
+  font-size: clamp(1.65rem, 3vw, 2.8rem);
 }
 
 .sectionTitleLight {
   color: white;
 }
 
-.testimonialGrid {
+.testimonialScrollArea {
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+}
+
+.testimonialViewport {
+  width: 100%;
+}
+
+.testimonialTrack {
+  display: flex;
   gap: 20px;
+  width: max-content;
+  padding-bottom: 8px;
 }
 
 .testimonialCard {
+  width: min(420px, calc(100vw - 72px));
+  flex: 0 0 auto;
+  scroll-snap-align: start;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.04);
   border-radius: 24px;
@@ -362,7 +416,7 @@ img {
 .contactBlock h2 {
   margin-top: 12px;
   max-width: 13ch;
-  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  font-size: clamp(1.95rem, 3.3vw, 3.2rem);
 }
 
 .contactForm {
@@ -500,12 +554,81 @@ img {
   gap: 14px;
 }
 
+.siteFooter {
+  background: #111214;
+  color: rgba(255,255,255,0.84);
+  padding: 44px 0 24px;
+}
+
+.footerInner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.footerBrandBlock {
+  display: grid;
+  gap: 18px;
+}
+
+.footerLogo {
+  width: clamp(140px, 18vw, 220px);
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footerCopy {
+  max-width: 44ch;
+  color: rgba(255,255,255,0.66);
+  line-height: 1.75;
+}
+
+.footerMetaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.footerLabel {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.46);
+  margin-bottom: 14px;
+}
+
+.footerLinks {
+  display: grid;
+  gap: 12px;
+}
+
+.footerLinks a {
+  color: rgba(255,255,255,0.82);
+}
+
+.footerSeparator {
+  height: 1px;
+  margin: 26px 0 18px;
+  background: rgba(255,255,255,0.08);
+}
+
+.footerBottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 24px;
+  color: rgba(255,255,255,0.48);
+  font-size: 0.92rem;
+}
+
 @media (max-width: 960px) {
   .storyGrid,
   .closingGrid,
-  .testimonialGrid,
   .storyGallery,
-  .storyPeopleGrid {
+  .storyPeopleGrid,
+  .footerInner,
+  .footerMetaGrid {
     grid-template-columns: 1fr;
   }
 
@@ -514,16 +637,38 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .heroTopbar {
-    align-items: flex-start;
-  }
-
   .heroNavDesktop {
     display: none;
   }
 
-  .heroMenuButton {
-    display: inline-flex;
+  .mobileStickyNav {
+    position: fixed;
+    top: 10px;
+    left: 12px;
+    right: 12px;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 22px;
+    background: rgba(15,15,16,0.78);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(16px);
+    transform: translateY(-12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 180ms ease;
+  }
+
+  .mobileStickyNavVisible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobileStickyLogo {
+    width: 84px;
   }
 
   .heroImage {
@@ -534,7 +679,15 @@ img {
     padding: 22px 0 42px;
   }
 
+  .heroTopbar {
+    align-items: flex-start;
+  }
+
   .hero h1 {
     max-width: 11ch;
+  }
+
+  .testimonialCard {
+    width: min(360px, calc(100vw - 72px));
   }
 }

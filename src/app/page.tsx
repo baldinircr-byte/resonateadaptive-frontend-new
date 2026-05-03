@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ContactForm } from "@/components/contact-form";
-import { HeroNav } from "@/components/hero-nav";
+import { Footer } from "@/components/footer";
+import { SiteNav } from "@/components/site-nav";
+import { TestimonialCarousel } from "@/components/testimonial-carousel";
 
 const testimonials = [
   {
@@ -59,7 +61,7 @@ export default function Home() {
               className="heroLogo"
               priority
             />
-            <HeroNav />
+            <SiteNav />
           </div>
           <div className="heroTextBlock">
             <p className="heroKicker">Play Without Limits</p>
@@ -132,14 +134,7 @@ export default function Home() {
         <div className="shell">
           <p className="eyebrow eyebrowLight">Our Why</p>
           <h2 className="sectionTitleLight">Built on real stories.</h2>
-          <div className="testimonialGrid">
-            {testimonials.map((item) => (
-              <blockquote key={item.author} className="testimonialCard">
-                <p>“{item.quote}”</p>
-                <footer>{item.author}</footer>
-              </blockquote>
-            ))}
-          </div>
+          <TestimonialCarousel items={testimonials} />
         </div>
       </section>
 
@@ -164,6 +159,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
