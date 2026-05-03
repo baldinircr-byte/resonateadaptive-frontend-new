@@ -56,14 +56,14 @@ img {
 
 .heroImage {
   object-fit: cover;
-  object-position: 62% center;
+  object-position: 72% 38%;
 }
 
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,0.54) 0%, rgba(0,0,0,0.24) 42%, rgba(0,0,0,0.14) 100%),
-    linear-gradient(180deg, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.12) 45%, rgba(0,0,0,0.48) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.66) 0%, rgba(0,0,0,0.32) 38%, rgba(0,0,0,0.14) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.10) 40%, rgba(0,0,0,0.44) 100%);
 }
 
 .heroContent {
@@ -169,9 +169,9 @@ img {
 
 .hero h1,
 .section h2 {
-  font-size: clamp(2.8rem, 6vw, 5.8rem);
-  line-height: 0.95;
-  letter-spacing: -0.05em;
+  font-size: clamp(2.4rem, 4.8vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
   font-weight: 600;
   text-wrap: balance;
 }
@@ -326,8 +326,8 @@ img {
 .sectionLight h2,
 .sectionTitleLight {
   margin-top: 12px;
-  max-width: 12ch;
-  font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+  max-width: 13ch;
+  font-size: clamp(1.9rem, 3.6vw, 3.3rem);
 }
 
 .sectionTitleLight {
@@ -527,7 +527,7 @@ img {
   }
 
   .heroImage {
-    object-position: 68% center;
+    object-position: 78% 34%;
   }
 
   .heroContent {
