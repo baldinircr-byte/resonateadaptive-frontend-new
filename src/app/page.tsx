@@ -145,12 +145,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="productMetaCard">
-                <p className="productMetaLabel">Shipping</p>
-                <p className="bodyCopy compactCopy">
-                  Shipping is charged separately and arranged after purchase. The customer is responsible for shipping costs.
-                </p>
-              </div>
-              <div className="productMetaCard">
                 <p className="productMetaLabel">Warranty</p>
                 <p className="bodyCopy compactCopy">1 year limited warranty.</p>
               </div>
