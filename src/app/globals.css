@@ -309,6 +309,18 @@ h6,
   color: var(--foreground);
 }
 
+.sectionCream {
+  background: #f6f0e6;
+}
+
+.sectionWhite {
+  background: #fffdf9;
+}
+
+.sectionWarm {
+  background: #ede4d7;
+}
+
 .sectionDark {
   background: var(--dark);
   color: white;

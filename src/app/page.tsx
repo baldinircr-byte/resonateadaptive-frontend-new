@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section sectionLight">
+      <section className="section sectionLight sectionCream">
         <div className="shell storyGrid">
           <div>
             <p className="eyebrow">The idea</p>
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="product" className="section sectionLight">
+      <section id="product" className="section sectionLight sectionWhite">
         <div className="shell storyGrid productGrid">
           <div>
             <p className="eyebrow">The Product</p>
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="section sectionLight sectionLightAlt">
+      <section id="about" className="section sectionLight sectionWarm">
         <div className="shell storyGrid">
           <div className="imageCard imageCardTall">
             <Image
@@ -209,7 +209,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section sectionLight">
+      <section className="section sectionLight sectionWhite">
         <div className="shell closingGrid">
           <div className="imageCard imageCardTall">
             <Image
