@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Footer } from "@/components/footer";
+
 export default function OurStoryPage() {
   return (
-    <main className="section sectionLight storyPage">
-      <div className="shell storyPageShell">
+    <>
+      <main className="section sectionLight storyPage">
+        <div className="shell storyPageShell">
         <Link href="/#top" className="storyPageLogoLink" aria-label="Back to homepage hero">
           <Image
             src="/images/site/logo-dark.png"
@@ -98,7 +101,10 @@ export default function OurStoryPage() {
           <Link href="/#about" className="button buttonDark">Back to home</Link>
           <Link href="/#contact" className="button buttonPrimaryOnLight">Get in touch</Link>
         </div>
-      </div>
-    </main>
+        </div>
+      </main>
+
+      <Footer />
+    </>
   );
 }
