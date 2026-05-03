@@ -610,8 +610,13 @@ h6,
   gap: 14px;
 }
 
+.storyPersonCard .imageCard {
+  aspect-ratio: 4 / 3;
+}
+
 .storyGalleryMain {
-  min-height: 560px;
+  min-height: auto;
+  height: 100%;
 }
 
 .storyPersonMeta {
