@@ -107,54 +107,56 @@ export default function Home() {
             <p className="eyebrow">The Product</p>
             <h2>Order Resonate</h2>
             <p className="bodyCopy">
-              Orders are currently being accepted online. Financing options are planned and will be integrated here as soon as they are available.
+              Available in limited quantities. Shipping is billed separately, and financing options will be added here as soon as they are available.
             </p>
 
-            <div className="productMetaGrid">
-              <div className="productMetaCard">
+            <div className="productPurchaseCard">
+              <div>
                 <p className="productMetaLabel">Price</p>
-                <p className="productMetaValue">C$4,800</p>
-                <p className="productMetaNote">Shipping is billed separately.</p>
+                <div className="productPriceRow">
+                  <p className="productMetaValue">C$4,800</p>
+                  <ProductCheckoutButton />
+                </div>
+                <p className="productFinanceLine">or approximately C$400/month for 12 months</p>
+                <p className="productMetaNote">Financing display only for now. Shipping is billed separately.</p>
               </div>
+            </div>
+
+            <div className="productMetaGrid productInfoGrid">
               <div className="productMetaCard">
                 <p className="productMetaLabel">Availability</p>
                 <p className="productMetaValue">Limited quantities</p>
                 <p className="productMetaNote">Current release available now.</p>
               </div>
-            </div>
-
-            <div className="productDetailList">
-              <div>
+              <div className="productMetaCard">
                 <p className="productMetaLabel">What’s included</p>
-                <ul className="productList bodyCopy compactCopy">
+                <ul className="productList compactList">
                   <li>Resonate Adaptive unit</li>
                   <li>Bite Switch</li>
                   <li>AC/DC Power Supply</li>
                 </ul>
               </div>
-              <div>
+              <div className="productMetaCard">
                 <p className="productMetaLabel">Dimensions & Weight</p>
-                <p className="bodyCopy compactCopy">
-                  24 lbs / 10.8 kg
-                </p>
-                <p className="productMetaNote">Reference drawing shown for current device dimensions.</p>
+                <p className="bodyCopy compactCopy">24 lbs / 10.8 kg</p>
+                <div className="productInlineAction">
+                  <ExpandableSpecImage compact />
+                  <span className="productMetaNote">Open reference drawing</span>
+                </div>
               </div>
-              <div>
+              <div className="productMetaCard">
                 <p className="productMetaLabel">Shipping</p>
                 <p className="bodyCopy compactCopy">
                   Shipping is charged separately and arranged after purchase. The customer is responsible for shipping costs.
                 </p>
               </div>
-              <div>
+              <div className="productMetaCard">
                 <p className="productMetaLabel">Warranty</p>
-                <p className="bodyCopy compactCopy">
-                  1 year limited warranty.
-                </p>
+                <p className="bodyCopy compactCopy">1 year limited warranty.</p>
               </div>
             </div>
 
             <div className="heroActions">
-              <ProductCheckoutButton />
               <a href="#contact" className="button buttonSecondaryOnLight">Product questions</a>
             </div>
           </div>
@@ -168,9 +170,6 @@ export default function Home() {
                 height={900}
                 className="featureImage"
               />
-            </div>
-            <div className="imageCard productDrawingCard">
-              <ExpandableSpecImage />
             </div>
           </div>
         </div>
