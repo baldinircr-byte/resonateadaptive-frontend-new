@@ -105,8 +105,7 @@ export default function Home() {
         <div className="shell storyGrid productGrid">
           <div>
             <p className="eyebrow">The Product</p>
-            <p className="productSubeyebrow">Order Resonate</p>
-            <h2>Resonate Adaptive is now available for purchase in limited quantities.</h2>
+            <h2>Order Resonate</h2>
             <p className="bodyCopy">
               Orders are currently being accepted online. Financing options are planned and will be integrated here as soon as they are available.
             </p>
