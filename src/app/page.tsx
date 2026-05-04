@@ -106,10 +106,6 @@ export default function Home() {
           <div>
             <p className="eyebrow">The Product</p>
             <h2>Order Resonate</h2>
-            <p className="bodyCopy">
-              Available in limited quantities. Shipping is billed separately, and financing options will be added here as soon as they are available.
-            </p>
-
             <div className="productPurchaseCard">
               <div>
                 <p className="productMetaLabel">Price</p>
@@ -117,8 +113,7 @@ export default function Home() {
                   <p className="productMetaValue">C$4,800</p>
                   <ProductCheckoutButton />
                 </div>
-                <p className="productFinanceLine">or approximately C$400/month for 12 months</p>
-                <p className="productMetaNote">Financing display only for now. Shipping is billed separately.</p>
+                <p className="productMetaNote">Shipping is billed separately.</p>
               </div>
             </div>
 
