@@ -712,8 +712,14 @@ h6,
   color: #9f2d2d;
 }
 
+.checkoutLayout {
+  display: grid;
+  justify-items: center;
+}
+
+.checkoutSummaryCard,
 .checkoutStatePage {
-  max-width: 760px;
+  width: min(760px, 100%);
   display: grid;
   gap: 22px;
 }
@@ -724,14 +730,93 @@ h6,
   line-height: 0.98;
 }
 
-.checkoutStateCard {
+.checkoutStateCard,
+.checkoutSummaryCard {
   border: 1px solid rgba(23, 23, 23, 0.08);
   background: white;
   border-radius: 24px;
   padding: 24px;
+  line-height: 1.8;
+}
+
+.checkoutStateCard {
   display: grid;
   gap: 10px;
-  line-height: 1.8;
+}
+
+.checkoutLineItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: start;
+  padding: 20px 0;
+  border-top: 1px solid rgba(23, 23, 23, 0.08);
+  border-bottom: 1px solid rgba(23, 23, 23, 0.08);
+}
+
+.checkoutItemName,
+.checkoutItemPrice {
+  font-family: var(--font-heading), Arial, Helvetica, sans-serif;
+}
+
+.checkoutItemName {
+  font-size: 1.2rem;
+  color: #171717;
+}
+
+.checkoutItemPrice {
+  font-size: 1.15rem;
+  color: #171717;
+}
+
+.checkoutQuantityRow,
+.checkoutTotalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.checkoutQuantityControl {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.checkoutQuantityControl button,
+.checkoutQuantityControl span {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkoutQuantityControl button {
+  border: 0;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+.checkoutQuantityControl span {
+  font-weight: 600;
+}
+
+.checkoutTotalRow strong {
+  font-family: var(--font-heading), Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.checkoutNoticeList {
+  display: grid;
+  gap: 8px;
+  color: #5c564d;
+}
+
+.checkoutContinueButton {
+  border: 0;
 }
 
 .storyPage {
@@ -972,7 +1057,10 @@ h6,
     width: min(360px, calc(100vw - 72px));
   }
 
-  .productPriceRow {
+  .productPriceRow,
+  .checkoutLineItem,
+  .checkoutQuantityRow,
+  .checkoutTotalRow {
     display: grid;
     justify-items: start;
   }
