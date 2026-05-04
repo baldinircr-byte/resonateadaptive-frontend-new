@@ -404,11 +404,10 @@ h6,
 }
 
 .productPriceRow {
-  margin-top: 12px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  gap: 14px 18px;
+  gap: 20px;
 }
 
 .productInfoGrid {

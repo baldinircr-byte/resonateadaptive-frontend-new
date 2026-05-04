@@ -107,13 +107,13 @@ export default function Home() {
             <p className="eyebrow">The Product</p>
             <h2>Order Resonate</h2>
             <div className="productPurchaseCard">
-              <div>
-                <p className="productMetaLabel">Price</p>
-                <div className="productPriceRow">
+              <div className="productPriceRow">
+                <div>
+                  <p className="productMetaLabel">Price</p>
                   <p className="productMetaValue">C$4,800</p>
-                  <ProductCheckoutButton />
+                  <p className="productMetaNote">Shipping is billed separately.</p>
                 </div>
-                <p className="productMetaNote">Shipping is billed separately.</p>
+                <ProductCheckoutButton />
               </div>
             </div>
 
