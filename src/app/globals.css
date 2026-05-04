@@ -562,6 +562,11 @@ h6,
 
 .productCheckoutButton {
   border: 0;
+  min-height: 42px;
+  padding: 0 16px;
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  align-self: center;
 }
 
 .productInlineAction {

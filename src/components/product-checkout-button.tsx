@@ -37,7 +37,7 @@ export function ProductCheckoutButton() {
   return (
     <div className="productCheckoutWrap">
       <button type="button" className="button buttonDark productCheckoutButton" onClick={handleClick} disabled={loading}>
-        {loading ? "Redirecting..." : "Order Resonate"}
+        {loading ? "Redirecting..." : "Order Now"}
       </button>
       {error ? <p className="formFeedback formFeedbackError">{error}</p> : null}
     </div>
