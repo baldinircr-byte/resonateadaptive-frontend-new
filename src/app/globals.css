@@ -264,6 +264,15 @@ h6,
   letter-spacing: 0.12em;
   text-transform: uppercase;
   transition: 160ms ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(0);
 }
 
 .buttonPrimary {
@@ -566,6 +575,11 @@ h6,
   font-size: 0.74rem;
   letter-spacing: 0.1em;
   align-self: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.productCheckoutButton:hover {
+  background: #222;
 }
 
 .productInlineAction {
