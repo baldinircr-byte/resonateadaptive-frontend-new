@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="heroActions">
+            <div className="heroActions desktopOnly">
               <a href="#contact" className="button buttonSecondaryOnLight">Product questions</a>
             </div>
           </div>
@@ -159,6 +159,9 @@ export default function Home() {
                 height={900}
                 className="featureImage"
               />
+            </div>
+            <div className="heroActions mobileOnly">
+              <a href="#contact" className="button buttonSecondaryOnLight">Product questions</a>
             </div>
           </div>
         </div>

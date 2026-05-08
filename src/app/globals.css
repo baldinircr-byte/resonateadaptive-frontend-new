@@ -309,6 +309,10 @@ h6,
   background: rgba(23, 23, 23, 0.03);
 }
 
+.mobileOnly {
+  display: none;
+}
+
 .section {
   padding: 88px 0;
 }
@@ -1005,6 +1009,14 @@ h6,
   .productMetaGrid,
   .productPriceRow {
     grid-template-columns: 1fr;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: flex;
   }
 
   .storyGallerySide {
