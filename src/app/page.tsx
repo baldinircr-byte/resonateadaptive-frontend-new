@@ -111,6 +111,7 @@ export default function Home() {
                 <div>
                   <p className="productMetaLabel">Price</p>
                   <p className="productMetaValue">C$4,800</p>
+                  <p className="productMetaNote">Or as low as C$256.33/month with Affirm.</p>
                   <p className="productMetaNote">Shipping is billed separately.</p>
                 </div>
                 <ProductCheckoutButton />

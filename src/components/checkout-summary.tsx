@@ -127,7 +127,8 @@ export function CheckoutSummary() {
 
         <div className="checkoutNoticeList">
           <p>Shipping is billed separately after purchase.</p>
-          <p>Financing options will be added here as soon as they are available.</p>
+          <p>Financing available through Affirm and Klarna at checkout.</p>
+          <p>Affirm plans available from C$256.33/month, subject to eligibility and approval.</p>
         </div>
 
         <div className="heroActions">
