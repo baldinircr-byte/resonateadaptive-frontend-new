@@ -73,7 +73,7 @@ export default function Home() {
               Resonate Adaptive makes it possible for disabled individuals to press the damper pedal without the need for lower limb function.
             </p>
             <div className="heroActions">
-              <a href="#why" className="button buttonPrimary">Why Resonate</a>
+              <a href="#product" className="button buttonPrimary">Order Now</a>
               <a href="#contact" className="button buttonSecondary">Get in touch</a>
             </div>
           </div>
