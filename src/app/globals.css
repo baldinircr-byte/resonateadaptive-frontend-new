@@ -122,14 +122,31 @@ h6,
 
 .heroNav a,
 .mobileStickyLink {
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .heroNav a {
-  color: rgba(255,255,255,0.82);
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  color: rgba(255,255,255,0.88);
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.heroNav a:hover,
+.heroNav a:focus-visible {
+  color: white;
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.28);
+  transform: translateY(-1px);
 }
 
 .mobileStickyHeader {
